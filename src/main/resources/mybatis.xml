@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--
+  @author thomas.quintana@telestax.com (Thomas Quintana)
+-->
+<configuration>
+
+<!--
+<environments default="production">
+      <environment id="production">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="org.hsqldb.jdbcDriver"/>
+        <property name="url" value="jdbc:hsqldb:file://${data}/restcomm;ifexists=true;hsqldb.write_delay=false;shutdown=true"/>
+        <property name="username" value="sa"/>
+        <property name="password" value=""/>
+      </dataSource>
+    </environment>
+     <environment id="mariadb">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://192.168.8.102:3306/restcomm"/>
+        <property name="username" value="root"/>
+        <property name="password" value="1234"/>
+      </dataSource>
+    </environment> 
+    
+  </environments>
+ -->
+  
+  <mappers>
+  	<mapper resource="org/restcomm/connect/dao/entities/accounts.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/applications.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/available-phone-numbers.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/call-detail-records.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/conference-detail-records.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/clients.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/http-cookies.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/incoming-phone-numbers.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/notifications.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/outgoing-caller-ids.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/registrations.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/recordings.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/sand-boxes.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/short-codes.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/sms-messages.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/transcriptions.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/gateways.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/announcements.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/usage.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/instanceId.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/media-servers.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/media-resource-broker-entity.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/extensions-configuration.xml"/>
+    <mapper resource="org/restcomm/connect/dao/entities/geolocation.xml"/>
+   
+  </mappers>
+  
+  
+</configuration>
